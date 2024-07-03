@@ -17,7 +17,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
   Input,
 } from "@nextui-org/react";
 import Logo from "../components/Logo";
@@ -185,10 +184,9 @@ export default function About() {
             <h1 className=" text-xl font-semibold">Tom Cruise</h1>
             <p className=" text-sm text-[#000000]">Founder & Chairman</p>
             <div className=" flex gap-3 mt-2">
-            <CiTwitter />
-            <IoLogoInstagram />
-            <FaLinkedinIn />
-
+              <CiTwitter />
+              <IoLogoInstagram />
+              <FaLinkedinIn />
             </div>
           </div>
           <div>
@@ -201,9 +199,9 @@ export default function About() {
             <h1 className=" text-xl font-semibold">Emma Watson</h1>
             <p className=" text-sm text-[#000000]">Managing Director</p>
             <div className=" flex gap-3 mt-2">
-            <CiTwitter />
-            <IoLogoInstagram />
-            <FaLinkedinIn />
+              <CiTwitter />
+              <IoLogoInstagram />
+              <FaLinkedinIn />
             </div>
           </div>
           <div>
@@ -216,16 +214,15 @@ export default function About() {
             <h1 className=" text-xl font-semibold">Will Smith</h1>
             <p className=" text-sm text-[#000000]">Product Designer</p>
             <div className=" flex gap-3 mt-2">
-            <CiTwitter />
-            <IoLogoInstagram />
-            <FaLinkedinIn />
+              <CiTwitter />
+              <IoLogoInstagram />
+              <FaLinkedinIn />
             </div>
-           
           </div>
         </div>
       </div>
-        <Footer1/>
-        <Footer/>
+      <Footer1 />
+      <Footer />
     </div>
   );
 }

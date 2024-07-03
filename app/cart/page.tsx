@@ -3,12 +3,8 @@ import React from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { BsCart3 } from "react-icons/bs";
 import { FiUser } from "react-icons/fi";
-import { Card, CardHeader, CardBody, divider } from "@nextui-org/react";
-import { RiDeleteBin6Fill } from "react-icons/ri";
-import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaAngleUp } from "react-icons/fa6";
 import { FaAngleDown } from "react-icons/fa";
-
 import {
   Navbar,
   NavbarBrand,
@@ -16,20 +12,12 @@ import {
   NavbarItem,
   Link,
   Input,
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  Avatar,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
 import { IoIosSearch } from "react-icons/io";
 import Image from "next/image";
-import { HiOutlineShoppingCart } from "react-icons/hi";
-
-import { FaRegUserCircle } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from "../components/Logo";
 import Footer from "../components/Footer";
@@ -50,10 +38,10 @@ export default function Cart() {
     <div>
       <div className="flex  flex-wrap gap-1 bg-black justify-center items-center">
         <h1 className=" text-center text-xs md:text-sm  text-white">
-        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
         </h1>
         <h2 className=" text-center  text-base text-white md:text-base underline">
-        ShopNow
+          ShopNow
         </h2>
       </div>
       <Navbar className=" max-w-[1200px] m-auto" maxWidth="full">
@@ -182,7 +170,9 @@ export default function Cart() {
         </div>
         <div className=" grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-wrap mb-3 lg:flex justify-center mt-10 h-[50px]   gap-2">
-            <h1 className="  text-center w-[180px] border p-2  rounded">Coupon Code</h1>
+            <h1 className="  text-center w-[180px] border p-2  rounded">
+              Coupon Code
+            </h1>
             <h1 className=" border  text-center w-[180px] p-2 rounded bg-[#DB4444] text-white">
               Apply Coupon
             </h1>
@@ -213,7 +203,7 @@ export default function Cart() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

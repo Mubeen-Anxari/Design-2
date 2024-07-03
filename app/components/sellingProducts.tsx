@@ -34,9 +34,9 @@ export default function SellingProducts() {
         </div>
       </div>
       <div className=" grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-        {products?.map((item) => {
+        {products?.map((item,index) => {
           return (
-            <div>
+            <div key={index}>
               <Card className="py-4 bg-[#F5F5F5]">
                 <CardBody className="overflow-visible py-2">
                   <Image

@@ -11,7 +11,6 @@ import OurProducts from "./components/ourProducts";
 import NewArrival from "./components/newArrival";
 import Footer1 from "./components/Footer1";
 import Footer from "./components/Footer";
-
 export default function Home() {
   return (
     <div>

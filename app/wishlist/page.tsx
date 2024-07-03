@@ -6,7 +6,6 @@ import { FiUser } from "react-icons/fi";
 import { Card, CardHeader, CardBody, divider } from "@nextui-org/react";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-
 import {
   Navbar,
   NavbarBrand,
@@ -14,11 +13,6 @@ import {
   NavbarItem,
   Link,
   Input,
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  Avatar,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -165,9 +159,9 @@ export default function App() {
           </p>
         </div>
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-          {products?.map((item) => {
+          {products?.map((item,index) => {
             return (
-              <div>
+              <div key={index}>
                 <Card className="py-4 min-h-[320px] rounded-none bg-[#F5F5F5]">
                   <div className=" flex  justify-between mr-3">
                     <p className=" bg-[#DB4444] text-center rounded ml-3  text-white p-1 w-16 h-8">
@@ -209,9 +203,9 @@ export default function App() {
           </div>
         </div>
         <div className=" grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-          {products?.map((item) => {
+          {products?.map((item,index) => {
             return (
-              <div>
+              <div key={index}>
                 <Card className="py-4  min-h-[320px] rounded-none bg-[#F5F5F5]">
                   <div className=" flex  justify-between mr-3">
                     <p className=" bg-[#DB4444] text-center rounded ml-3  text-white p-1 w-16 h-8">

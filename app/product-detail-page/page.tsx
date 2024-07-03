@@ -4,7 +4,7 @@ import Image from "next/image";
 import { PiShoppingCart } from "react-icons/pi";
 import { PiHeartStraight } from "react-icons/pi";
 import { TbUser } from "react-icons/tb";
-import { Card, CardHeader, CardBody, divider } from "@nextui-org/react";
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
 
 import {
@@ -16,12 +16,10 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
   Input,
 } from "@nextui-org/react";
 import Logo from "../components/Logo";
 import Footer from "../components/Footer";
-import ProductsSection from "../components/productsSection";
 export default function DetailPage() {
     const products = [
         {
@@ -202,9 +200,9 @@ export default function DetailPage() {
         </div>
        </div>
        <div className=" grid grid-cols-1 mx-5 mt-10 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-          {products?.map((item) => {
+          {products?.map((item,index) => {
             return (
-              <div>
+              <div key={index}>
                 <Card className="py-4  min-h-[320px] rounded-none bg-[#F5F5F5]">
                   <div className=" flex  justify-between mr-3">
                     <p className=" bg-[#DB4444] text-center rounded ml-3  text-white p-1 w-16 h-8">

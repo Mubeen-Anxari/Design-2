@@ -60,9 +60,9 @@ export default function ProductsSection() {
         </div>
       </div>
       <div className=" grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-4 justify-center gap-4 mt-10">
-        {products?.map((item) => {
+        {products?.map((item,index) => {
           return (
-            <div >
+            <div key={index}>
               <Card className="py-4  m-auto    bg-[#F5F5F5]">
                 <CardBody className="overflow-visible py-2">
                   <Image

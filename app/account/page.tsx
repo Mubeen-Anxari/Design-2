@@ -1,13 +1,8 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { PiShoppingCart } from "react-icons/pi";
 import { PiHeartStraight } from "react-icons/pi";
 import { TbUser } from "react-icons/tb";
-import { IoCheckboxOutline } from "react-icons/io5";
-import { FaRegCircle } from "react-icons/fa";
-import { MdRadioButtonChecked } from "react-icons/md";
-
 import {
   Navbar,
   NavbarBrand,
@@ -17,7 +12,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
   Input,
 } from "@nextui-org/react";
 import Logo from "../components/Logo";

@@ -17,7 +17,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
   Input,
 } from "@nextui-org/react";
 import Logo from "../components/Logo";

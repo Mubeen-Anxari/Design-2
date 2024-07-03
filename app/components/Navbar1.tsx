@@ -10,23 +10,13 @@ import {
   NavbarItem,
   Link,
   Input,
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  Avatar,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Logo from "./Logo";
 import { IoIosSearch } from "react-icons/io";
-import Image from "next/image";
-import { HiOutlineShoppingCart } from "react-icons/hi";
-
-import { FaRegUserCircle } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
-
 export default function App() {
   const menuItems = [
     "Profile",

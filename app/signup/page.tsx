@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
-
 import {
   Navbar,
   NavbarBrand,
@@ -12,15 +11,10 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
   Input,
 } from "@nextui-org/react";
 import Logo from "../components/Logo";
-import { IoIosSearch } from "react-icons/io";
-import { FaRegHeart } from "react-icons/fa";
-import { BsCart3 } from "react-icons/bs";
 import Footer from "../components/Footer";
-
 export default function App() {
   const menuItems = [
     "Profile",
